@@ -1,0 +1,469 @@
+2016-03-08 14:03:51.109 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:51.111 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:51.111 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-03-08 14:03:51.111 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-03-08 14:03:51.111 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-03-08 14:03:51.131  INFO 10644 --- [main] c.m.testproject.TestProjectApplication   : Starting TestProjectApplication on DEB-LT015 with PID 10644 (C:\Projects\Eclipse\TestProject\bin started by Sandor_Miko in C:\Projects\Eclipse\TestProject)
+2016-03-08 14:03:51.131  INFO 10644 --- [main] c.m.testproject.TestProjectApplication   : No active profile set, falling back to default profiles: default
+2016-03-08 14:03:51.163  INFO 10644 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fe8ea47: startup date [Tue Mar 08 14:03:51 CET 2016]; root of context hierarchy
+2016-03-08 14:03:51.646  INFO 10644 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-03-08 14:03:51.817 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [applicationConfig: [classpath:/application.properties]] PropertySource with search precedence immediately lower than [applicationConfigurationProperties]
+2016-03-08 14:03:51.818 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing [applicationConfigurationProperties] PropertySource
+2016-03-08 14:03:51.818 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing [defaultProperties] PropertySource
+2016-03-08 14:03:51.927  INFO 10644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$906364dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-03-08 14:03:52.230  INFO 10644 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-03-08 14:03:52.241  INFO 10644 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-03-08 14:03:52.242  INFO 10644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-03-08 14:03:52.314  INFO 10644 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-03-08 14:03:52.314 DEBUG 10644 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2016-03-08 14:03:52.314  INFO 10644 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1153 ms
+2016-03-08 14:03:52.489 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.489 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.490 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-03-08 14:03:52.491 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-03-08 14:03:52.491 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-03-08 14:03:52.504 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.504 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.504 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-03-08 14:03:52.504 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-03-08 14:03:52.504 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-03-08 14:03:52.507 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.508 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.508 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-03-08 14:03:52.508 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-03-08 14:03:52.508 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-03-08 14:03:52.521 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.521 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-03-08 14:03:52.521 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-03-08 14:03:52.521 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-03-08 14:03:52.522 DEBUG 10644 --- [localhost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-03-08 14:03:52.532  INFO 10644 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-03-08 14:03:52.535  INFO 10644 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-03-08 14:03:52.536  INFO 10644 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-03-08 14:03:52.536  INFO 10644 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-03-08 14:03:52.537  INFO 10644 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-03-08 14:03:52.557 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2016-03-08 14:03:52.613  INFO 10644 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2016-03-08 14:03:52.945  INFO 10644 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fe8ea47: startup date [Tue Mar 08 14:03:51 CET 2016]; root of context hierarchy
+2016-03-08 14:03:52.990 DEBUG 10644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fe8ea47: startup date [Tue Mar 08 14:03:51 CET 2016]; root of context hierarchy
+2016-03-08 14:03:52.999 DEBUG 10644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 request handler methods found on class com.mikeux.testproject.GreetingController: {public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)={[/greeting]}}
+2016-03-08 14:03:52.999  INFO 10644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)
+2016-03-08 14:03:53.001 DEBUG 10644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}}
+2016-03-08 14:03:53.002  INFO 10644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-03-08 14:03:53.002  INFO 10644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-03-08 14:03:53.018 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fe8ea47: startup date [Tue Mar 08 14:03:51 CET 2016]; root of context hierarchy
+2016-03-08 14:03:53.018 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2016-03-08 14:03:53.018 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2016-03-08 14:03:53.018 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2016-03-08 14:03:53.018 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2016-03-08 14:03:53.018 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'testProjectApplication': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'greetingController': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'userRepository': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.019 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2016-03-08 14:03:53.020 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified
+2016-03-08 14:03:53.021 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageCustomizer': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2016-03-08 14:03:53.022 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified
+2016-03-08 14:03:53.023 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconHandlerMapping': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconRequestHandler': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultViewResolver': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestContextFilter': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewResolver': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.resources.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+2016-03-08 14:03:53.024 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanExporter': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectNamingStrategy': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanServer': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationAdminRegistrar': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$JdbcTemplateConfiguration': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jdbcTemplate': no URL paths identified
+2016-03-08 14:03:53.025 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializer': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.EmbeddedDataSourceConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSource': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.datasource.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$EmbeddedConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2016-03-08 14:03:53.026 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionAttributeSource': no URL paths identified
+2016-03-08 14:03:53.027 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionInterceptor': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$TransactionManagementConfiguration': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionManager': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionTemplate': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipart.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-03-08 14:03:53.028 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationArguments': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootLoggingSystem': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified
+2016-03-08 14:03:53.029 DEBUG 10644 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified
+2016-03-08 14:03:53.038  INFO 10644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-08 14:03:53.038  INFO 10644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-08 14:03:53.047 DEBUG 10644 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fe8ea47: startup date [Tue Mar 08 14:03:51 CET 2016]; root of context hierarchy
+2016-03-08 14:03:53.068  INFO 10644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-08 14:03:53.205  INFO 10644 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-03-08 14:03:53.213 DEBUG 10644 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Looking for resource handler mappings
+2016-03-08 14:03:53.214 DEBUG 10644 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]
+2016-03-08 14:03:53.214 DEBUG 10644 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@726a17c4]
+2016-03-08 14:03:53.214 DEBUG 10644 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5dc3fcb7]
+2016-03-08 14:03:53.261  INFO 10644 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-03-08 14:03:53.262 DEBUG 10644 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [server.ports] PropertySource with highest search precedence
+2016-03-08 14:03:53.266  INFO 10644 --- [main] c.m.testproject.TestProjectApplication   : Started TestProjectApplication in 2.326 seconds (JVM running for 2.744)
+2016-03-08 14:04:10.565 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing servlet 'dispatcherServlet'
+2016-03-08 14:04:10.566  INFO 10644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-03-08 14:04:10.567  INFO 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-08 14:04:10.567 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@1136b6ba]
+2016-03-08 14:04:10.570 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@70221f72]
+2016-03-08 14:04:10.573 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@ca0d2dd]
+2016-03-08 14:04:10.577 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@214c1c74]
+2016-03-08 14:04:10.583 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@982dfa1]
+2016-03-08 14:04:10.583 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+2016-03-08 14:04:10.583  INFO 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2016-03-08 14:04:10.583 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Servlet 'dispatcherServlet' configured successfully
+2016-03-08 14:04:10.603 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:10.607 DEBUG 10644 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:10.609 DEBUG 10644 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:10.611 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:10.621  INFO 10644 --- [http-nio-8080-exec-1] c.mikeux.testproject.GreetingController  : Jeeee! 0
+2016-03-08 14:04:10.643 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:10.643 DEBUG 10644 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:10.643 DEBUG 10644 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:10.644 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:10.644  INFO 10644 --- [http-nio-8080-exec-2] c.mikeux.testproject.GreetingController  : Jeeee! 1
+2016-03-08 14:04:10.677 DEBUG 10644 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@16cfb874] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:10.677 DEBUG 10644 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolving exception from handler [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]: org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+2016-03-08 14:04:10.677 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:10.677 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:10.680 DEBUG 10644 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolving exception from handler [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]: org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+2016-03-08 14:04:10.680 DEBUG 10644 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolving exception from handler [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]: org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+2016-03-08 14:04:10.690 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Could not complete request
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:393) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.buf.ByteChunk.flushBuffer(ByteChunk.java:426) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:342) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:317) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:110) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1022) ~[jackson-core-2.6.5.jar:2.6.5]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:891) ~[jackson-databind-2.6.5.jar:2.6.5]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:265) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:100) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:222) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:153) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:165) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:80) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:126) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) [spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) [spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) [spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_74]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_74]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_74]
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.8.0_74]
+	at sun.nio.ch.SocketDispatcher.write(Unknown Source) ~[na:1.8.0_74]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source) ~[na:1.8.0_74]
+	at sun.nio.ch.IOUtil.write(Unknown Source) ~[na:1.8.0_74]
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source) ~[na:1.8.0_74]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:124) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:172) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer.writeToSocket(InternalNioOutputBuffer.java:139) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer.addToBB(InternalNioOutputBuffer.java:197) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer.access$000(InternalNioOutputBuffer.java:41) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer$SocketOutputBuffer.doWrite(InternalNioOutputBuffer.java:320) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:116) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.AbstractOutputBuffer.doWrite(AbstractOutputBuffer.java:256) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.Response.doWrite(Response.java:501) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:388) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	... 59 common frames omitted
+
+2016-03-08 14:04:10.719 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:10.720 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:10.721 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:10.722 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:10.723 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:10.731 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:10.731 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:10.813 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:10.813 DEBUG 10644 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:10.813 DEBUG 10644 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:10.814 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:10.814  INFO 10644 --- [http-nio-8080-exec-4] c.mikeux.testproject.GreetingController  : Jeeee! 2
+2016-03-08 14:04:10.817 DEBUG 10644 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@3e57662d] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:10.817 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:10.817 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:10.859 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:10.859 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:10.859 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:10.859 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:10.859 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:10.861 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:10.861 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:10.972 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:10.972 DEBUG 10644 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:10.973 DEBUG 10644 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:10.973 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:10.973  INFO 10644 --- [http-nio-8080-exec-6] c.mikeux.testproject.GreetingController  : Jeeee! 3
+2016-03-08 14:04:10.975 DEBUG 10644 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@c1813ab] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:10.975 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:10.976 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.010 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:11.010 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:11.010 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:11.010 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:11.010 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:11.012 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.012 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.147 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:11.147 DEBUG 10644 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:11.147 DEBUG 10644 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:11.147 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:11.148  INFO 10644 --- [http-nio-8080-exec-8] c.mikeux.testproject.GreetingController  : Jeeee! 4
+2016-03-08 14:04:11.149 DEBUG 10644 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@7894995d] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:11.150 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.150 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.180 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:11.181 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:11.181 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:11.181 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:11.181 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:11.183 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.183 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.324 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:11.325 DEBUG 10644 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:11.325 DEBUG 10644 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:11.325 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:11.325  INFO 10644 --- [http-nio-8080-exec-10] c.mikeux.testproject.GreetingController  : Jeeee! 5
+2016-03-08 14:04:11.327 DEBUG 10644 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@5edbbda8] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:11.327 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.327 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.381 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:11.381 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:11.381 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:11.381 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:11.381 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:11.382 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.382 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.492 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:11.492 DEBUG 10644 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:11.492 DEBUG 10644 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:11.492 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:11.493  INFO 10644 --- [http-nio-8080-exec-1] c.mikeux.testproject.GreetingController  : Jeeee! 6
+2016-03-08 14:04:11.494 DEBUG 10644 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@a57a124] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:11.495 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.495 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.524 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:11.524 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:11.524 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:11.524 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:11.524 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:11.526 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.526 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.651 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:11.652 DEBUG 10644 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:11.652 DEBUG 10644 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:11.652 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:11.652  INFO 10644 --- [http-nio-8080-exec-4] c.mikeux.testproject.GreetingController  : Jeeee! 7
+2016-03-08 14:04:11.654 DEBUG 10644 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@30909f97] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:11.654 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.654 DEBUG 10644 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.682 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:11.683 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:11.683 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:11.683 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:11.683 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:11.685 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.685 DEBUG 10644 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.835 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:11.835 DEBUG 10644 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:11.836 DEBUG 10644 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:11.836 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:11.836  INFO 10644 --- [http-nio-8080-exec-6] c.mikeux.testproject.GreetingController  : Jeeee! 8
+2016-03-08 14:04:11.838 DEBUG 10644 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@2dffc58] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:11.838 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.838 DEBUG 10644 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.869 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:11.869 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:11.869 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:11.869 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:11.870 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:11.872 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.872 DEBUG 10644 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:11.987 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:11.987 DEBUG 10644 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:11.987 DEBUG 10644 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:11.988 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:11.988  INFO 10644 --- [http-nio-8080-exec-8] c.mikeux.testproject.GreetingController  : Jeeee! 9
+2016-03-08 14:04:11.989 DEBUG 10644 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@7653783f] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:11.990 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:11.990 DEBUG 10644 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:12.020 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:12.020 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:12.020 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:12.020 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:12.020 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:12.022 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:12.022 DEBUG 10644 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:12.148 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:12.148 DEBUG 10644 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:12.148 DEBUG 10644 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:12.148 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:12.148  INFO 10644 --- [http-nio-8080-exec-10] c.mikeux.testproject.GreetingController  : Jeeee! 10
+2016-03-08 14:04:12.150 DEBUG 10644 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@501c5803] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:12.151 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:12.151 DEBUG 10644 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:12.181 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:12.181 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:12.181 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:12.181 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:12.181 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:12.183 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:12.183 DEBUG 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:12.316 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/greeting]
+2016-03-08 14:04:12.316 DEBUG 10644 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /greeting
+2016-03-08 14:04:12.316 DEBUG 10644 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public com.mikeux.testproject.Greeting com.mikeux.testproject.GreetingController.greeting(java.lang.String)]
+2016-03-08 14:04:12.316 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/greeting] is: -1
+2016-03-08 14:04:12.316  INFO 10644 --- [http-nio-8080-exec-1] c.mikeux.testproject.GreetingController  : Jeeee! 11
+2016-03-08 14:04:12.318 DEBUG 10644 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Written [com.mikeux.testproject.Greeting@60a97d88] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7d2dcc27]
+2016-03-08 14:04:12.318 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:12.319 DEBUG 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:12.347 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2016-03-08 14:04:12.348 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2016-03-08 14:04:12.348 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : URI Template variables for request [/favicon.ico] are {}
+2016-03-08 14:04:12.348 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f14a673]]] and 1 interceptor
+2016-03-08 14:04:12.348 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/favicon.ico] is: -1
+2016-03-08 14:04:12.349 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-03-08 14:04:12.349 DEBUG 10644 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-03-08 14:04:14.910  INFO 10644 --- [RMI TCP Connection(2)-192.168.75.93] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2016-03-08 14:04:14.911  INFO 10644 --- [RMI TCP Connection(2)-192.168.75.93] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fe8ea47: startup date [Tue Mar 08 14:03:51 CET 2016]; root of context hierarchy
+2016-03-08 14:04:14.912  INFO 10644 --- [RMI TCP Connection(2)-192.168.75.93] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-03-08 14:04:14.913  INFO 10644 --- [RMI TCP Connection(2)-192.168.75.93] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'

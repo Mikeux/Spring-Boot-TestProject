@@ -17,4 +17,11 @@ public class Others {
 	//http://howtodoinjava.com/jpa/spring-hibernate-jpa-configuration-example/
 
 	//http://www.concretepage.com/spring-4/spring-4-hibernate-4-gradle-integration-example-using-annotation
+
+	//Repository @Component and caching
+	//https://spring.io/guides/gs/caching/
+	
+	
+	//http://stackoverflow.com/questions/8490852/spring-transactional-isolation-propagation
+	//http://spring.io/guides/gs/managing-transactions/
 }

@@ -4,10 +4,12 @@ package com.mikeux.testproject.models;
 import java.io.Serializable;
 import javax.persistence.*;
 
+import org.springframework.transaction.annotation.Transactional;
+
 @Entity
 @Table(name = "user")
+@Transactional
 public class User implements Serializable {
-
 	
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

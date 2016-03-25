@@ -10,7 +10,16 @@ public class Folder implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    public Long getId() {
+    	return this.id;
+    }
+    
+    public void setId(Long id) {
+    	this.id = id;
+    }
 	
+    public Folder () { }
+    
     public Folder(String name, User user, Folder parentFolder) {
     	this.name = name;
     	this.user = user;
@@ -28,7 +37,7 @@ public class Folder implements Serializable {
         return this.name = name;
     }
         
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "parentFolder")
     private Folder parentFolder;
     
@@ -42,7 +51,7 @@ public class Folder implements Serializable {
     }
     
     
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "user_id")
 	private User user;
     

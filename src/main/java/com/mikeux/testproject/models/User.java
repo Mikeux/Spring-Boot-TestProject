@@ -8,21 +8,29 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(name = "user")
-@Transactional
 public class User implements Serializable {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false)
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	@Column(nullable = false)
     private String name;
 
     @Column(nullable = false)
     private String password;
 
     // ... additional members, often include @OneToMany mappings
-
+    public User() { }
+    
     public User(String name, String password) {
         this.name = name;
         this.password = password;

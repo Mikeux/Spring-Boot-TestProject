@@ -3,9 +3,11 @@ package com.mikeux.testproject;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.sql.Timestamp;
+import java.util.LinkedList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +24,7 @@ import com.mikeux.testproject.services.UserServices;
 public class Utils {
 	private static final Logger log = LoggerFactory.getLogger(UserServices.class);
 	
-	private static ProtocolDao protocolDao;
+	public static ProtocolDao protocolDao;
 	
 	@Autowired
 	private ProtocolDao dao0;
@@ -35,49 +37,31 @@ public class Utils {
 	//@Autowired
 	//private ProtocolDao protocolDao;
 	
-	//@Transactional(isolation = Isolation.READ_UNCOMMITTED)
-	public static Protocol ProtocolValidator(String methodName) {	
-		log.info("Protocol - "+methodName);
-		String ClassName = "";
-		if(methodName.indexOf(".") > -1) {
-			ClassName = methodName.split("\\.")[0];
-		} else {
-			ClassName = methodName;
-		}
-
-		//List<Protocol> protList = protocolDao.findByMethodNameNullErrorMessage(methodName);
-		List<Protocol> protList = protocolDao.findByMethodNameNullErrorMessage(ClassName+".%");
+	@Transactional
+	public static Protocol CreateNewProtocol(String methodName, long Id) {
 		Protocol newProt = null;
-		//Protocol lastProt = null;
 		newProt = new Protocol();
 		newProt.setMethodName(methodName);
 		newProt.setExecutionTime(new Timestamp(new java.util.Date().getTime()));	
+		newProt.setFkId(Id);
 		protocolDao.save(newProt);
-		
-		//log.error("newProt = "+(newProt == null ? "null" : newProt.getMethodName()));
-			
-		log.error("List Size:"+protList.size());
-		/*for(Protocol prot : protList){
-			log.error(prot.getExecutionTime()+"");
-		}*/
-		if(protList.size() > 0) {
-			Utils.ProtocolClose(newProt, false, "Optimistic Locking Exception", null);
-			newProt = null;
-		}
-				
-		/*if(protList.size() == 0) {
-			//ret = false;			
-			protocolDao.save(newProt);
-		} else {
-			log.error("Utolso ("+methodName+"): "+protList.get(0).getExecutionTime().toString());
-			Utils.ProtocolClose(newProt, false, "Optimistic Locking Exception", null);
-			newProt = null;
-		}*/
 		return newProt;
 	}
 	
+	public static boolean CheckOptimisticLocking(String methodExpression, long Id, Long prId) {
+		List<Long> list = new LinkedList();
+		list.add(Id);
+		return 	CheckOptimisticLocking(methodExpression, list, prId);
+	}
+	
+	public static boolean CheckOptimisticLocking(String methodExpression, List<Long> CheckIds, Long prId) {
+		List<Protocol> protList = protocolDao.findByMethodNameNullErrorMessageAndById(methodExpression, CheckIds, prId);
+		return protList.size() > 0;
+	}
+			
 	@Transactional
 	public static void ProtocolClose(Protocol protocol, boolean successFul, String errorMessage, Throwable throwable) {
+		if(errorMessage.length() > 254) errorMessage = errorMessage.substring(0,254);
 		
 		protocol.setSuccessful(successFul);
 		protocol.setErrorMessage(errorMessage);

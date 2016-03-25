@@ -23,10 +23,14 @@ import org.hibernate.annotations.Type;
 public class Label {	
 
 	public static enum LabelType {
-        Default,
-        Type1, 
-        Type2
+        NotDefined,
+        Favourites, 
+        User
     }
+	
+	public Label() {
+
+	}
 	
 	public Label(String name, String type, String description, byte[] icon, User user) {
 		this.name = name;
@@ -52,7 +56,7 @@ public class Label {
     private String description;
     //String _description = clob.getSubString(0, clob.length());
     
-    @Type(type="blob")
+    @Lob
     @Column
     private byte[] icon;
     
@@ -64,7 +68,14 @@ public class Label {
     @ManyToMany(mappedBy = "entyLabels")
     private Set<Entry> users = new HashSet<Entry>();
 
-    public String getName() {
+    public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getId() {
+		return id;
+	}
+	
+	public String getName() {
 		return name;
 	}
 
@@ -102,9 +113,5 @@ public class Label {
 
 	public void setUser(User user) {
 		this.user = user;
-	}
-
-	public Long getId() {
-		return id;
 	}
 }

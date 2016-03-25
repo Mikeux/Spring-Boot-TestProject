@@ -4,9 +4,11 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @SpringBootApplication
+@EnableAsync
 public class TestProjectApplication {
 
 	public static void main(String[] args) {
@@ -19,8 +21,8 @@ public class TestProjectApplication {
 	    response.sendError(HttpStatus.BAD_REQUEST.value(), "Please try again and with a non empty string as 'name'");
 	}*/
 	
-	//@ExceptionHandler(Exception.class)
-	@ExceptionHandler
+	@ExceptionHandler(Exception.class)
+	//@ExceptionHandler
 	public String handleError(HttpServletRequest req, Exception exception) {
 		//logger.error("Request: " + req.getRequestURL() + " raised " + exception);
 		return "Request: " + req.getRequestURL() + " raised " + exception;

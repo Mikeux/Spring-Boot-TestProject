@@ -91,6 +91,14 @@ public class Entry {
 		this.folder = folder;
 	}
 
+	public Entry() {
+		super();
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	@ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name="entylabels", 
     	joinColumns={@JoinColumn(name="entry_id")}, 

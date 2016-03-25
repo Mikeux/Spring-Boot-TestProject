@@ -15,7 +15,8 @@ public interface ProtocolDao  extends CrudRepository<Protocol, Long> {
    * Note that this method is not implemented and its working code will be
    * automagically generated from its signature by Spring Data JPA.
    */
-  public Protocol findByMethodName(String mName);
+	
+  public List<Protocol> findByMethodName(String mName);
   
   public Protocol findFirstByMethodNameOrderByIdDesc(String mName);
   //public Protocol findTop1ByMethodNameOrderByIdDesc(String mName);
@@ -26,9 +27,16 @@ public interface ProtocolDao  extends CrudRepository<Protocol, Long> {
   @Query("SELECT p FROM Protocol p WHERE p.methodName='?1' ORDER BY p.id DESC")
   Protocol findByMethodNameLast(String mName);
   
+  @Query("SELECT p FROM Protocol p "+
+		  " WHERE p.methodName like ?1 AND p.errorMessage is NULL "+
+		  " AND (p.fkId IN ?2 AND p.fkId != 0) AND p.id != ?3 "+
+		  " AND (minute(current_date()) - minute(p.executionTime)) < 2 "+
+		  " ORDER BY p.id DESC")
+  public List<Protocol> findByMethodNameNullErrorMessageAndById(String methodName, List<Long> ids, Long prId);
+  
   @Query("SELECT p FROM Protocol p WHERE p.methodName like ?1 AND p.errorMessage is NULL ORDER BY p.id DESC")
   public List<Protocol> findByMethodNameNullErrorMessage(String methodName);
-
+  
   
   //@Query("SELECT t.title FROM Todo t where t.id = :id") 
   //Optional<String> findTitleById(@Param("id") Long id);

@@ -29,6 +29,15 @@ public class Protocol {
 	}
 	
 	@Column
+    private Long fkId;
+	public Long getFkId() {
+		return fkId;
+	}
+	public void setFkId(Long id){
+		this.fkId = id;
+	}
+	
+	@Column
 	//@Temporal(TemporalType.TIMESTAMP)
 	private Timestamp executionTime;
 	public Timestamp getExecutionTime() {

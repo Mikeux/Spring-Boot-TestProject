@@ -14,10 +14,8 @@ public class GlobalControllerAdvice {
 	
   @ModelAttribute
   public void myMethod(Model model) {
-	  log.error(model.toString());
-	  
-     //Object myValues = // obtain your data from DB here...
-
-     //model.addAttribute("myDbValues", myValues);
+	  //log.error(model.toString());
+      //Object myValues = // obtain your data from DB here...
+	  //model.addAttribute("myDbValues", myValues);
   }
 }

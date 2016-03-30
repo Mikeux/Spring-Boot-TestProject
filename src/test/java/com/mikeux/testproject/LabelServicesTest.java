@@ -15,9 +15,12 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.Future;
 
 import javax.imageio.ImageIO;
+import javax.ws.rs.client.AsyncInvoker;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -39,6 +42,8 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.mock.http.MockHttpOutputMessage;
 import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -61,7 +66,8 @@ import com.mikeux.testproject.models.UserDao;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(TestProjectApplication.class)
-@WebIntegrationTest({"server.port=0", "management.port=0"})
+@WebIntegrationTest({"server.port=8080"})
+@TestPropertySource(locations="classpath:test.properties")
 public class LabelServicesTest {
 	@Autowired
     private WebApplicationContext wac;
@@ -92,6 +98,39 @@ public class LabelServicesTest {
 	public OutputCapture capture = new OutputCapture();
 
 	@Test
+	public void AsyncTest() throws Exception {
+//https://books.google.hu/books?id=zGEYAgAAQBAJ&pg=PT290&lpg=PT290&dq=java+AsyncInvoker+async+request&source=bl&ots=tqD1xzbKWn&sig=sBHi8sXuhsO3h_VsNXWjcW3o_zc&hl=hu&sa=X&ved=0ahUKEwi75IXektzLAhWDQZoKHWBiAaAQ6AEIVzAI#v=onepage&q=asyn&f=false
+		this.createLabel();
+		List<User> userList = new ArrayList<>();
+		userList.add(userDao.save(new User("FolderTest1","Password")));
+		userList.add(userDao.save(new User("FolderTest2","Password")));
+		userList.add(userDao.save(new User("FolderTest3","Password")));
+		userList.add(userDao.save(new User("FolderTest4","Password")));
+				
+		Iterable<Label> labels = labelDao.findAll();
+		
+		Client client = ClientBuilder.newClient();
+		WebTarget target = client.target("http://localhost:8080/updateLabel");
+		target = target.queryParam("id","1");
+		target = target.queryParam("name","name");
+		target = target.queryParam("type","User");
+		target = target.queryParam("description","description");
+		target = target.queryParam("icon",json(new byte[0]));
+
+        //Asyn
+        AsyncInvoker builder = target.request().async();
+        Entity<User> valaki = Entity.json(userList.get(3));  
+        
+        builder.post(valaki).get();
+        
+        //Future<Response> future = builder.post(valaki);         
+        /*for(int i=0; i<5; i++) {
+        	Future<Response> future = builder.post(valaki); 
+        }*/
+		
+	}
+	
+	//@Test
 	public void createLabel() throws Exception {
 		labelDao.deleteAll();
 		User parentuser = userDao.save(new User("CreateLabelTest","Password"));				
@@ -114,7 +153,7 @@ public class LabelServicesTest {
 		Assert.assertTrue(Lists.newArrayList(labelDao.findAll()).size() == 5);
 	}
 	
-	@Test
+	//@Test
 	public void FullTest() throws Exception {
 		User parentuser = userDao.save(new User("FullLabelTest","Password"));		
 		String json;

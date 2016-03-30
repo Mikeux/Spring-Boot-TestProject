@@ -6,6 +6,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -52,7 +53,7 @@ public class LabelServices {
     }
 	
 	@Transactional(isolation = Isolation.READ_UNCOMMITTED, propagation = Propagation.SUPPORTS)
-    @RequestMapping("/updateLabel")
+	@RequestMapping("/updateLabel")
     public Label updateLabel(long id, String name, LabelType type, String description, byte[] icon) {
 		Protocol pr = Utils.CreateNewProtocol("LabelServices.updateLabel", id);
 		try {
@@ -60,6 +61,7 @@ public class LabelServices {
 		    if(locked) {
 		    	Utils.ProtocolClose(pr, false, "OptimisticLocking Error", null);
 		    } else {
+		    	Thread.sleep(1000);
 		    	Label label = labelDao.findOne(id);
 	        	if(label != null) {
 	        		label.setName(name);

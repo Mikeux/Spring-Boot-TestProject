@@ -1,7 +1,5 @@
 package com.mikeux.testproject.services;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -12,7 +10,6 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mikeux.testproject.Utils;

@@ -7,11 +7,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -26,19 +23,18 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.mock.http.MockHttpOutputMessage;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.JsonPath;
 import com.mikeux.testproject.models.Entry;
 import com.mikeux.testproject.models.EntryDao;
 import com.mikeux.testproject.models.Folder;
 import com.mikeux.testproject.models.FolderDao;
-import com.mikeux.testproject.models.Label;
 import com.mikeux.testproject.models.Label.LabelType;
 import com.mikeux.testproject.models.LabelDao;
 import com.mikeux.testproject.models.User;
@@ -47,6 +43,7 @@ import com.mikeux.testproject.models.UserDao;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(TestProjectApplication.class)
 @WebIntegrationTest({"server.port=0", "management.port=0"})
+@TestPropertySource(locations="classpath:test.properties")
 public class EntryServicesTest {
 	@Autowired
     private WebApplicationContext wac;
@@ -102,7 +99,7 @@ public class EntryServicesTest {
 		
 		json = result.getResponse().getContentAsString();
 		parentFolder = folderDao.findOne(Long.parseLong(JsonPath.read(json, "$.id").toString()));	
-		
+				
 		result = this.mockMvc.perform(post("/createNewEntry")
 				.contentType(MediaType.APPLICATION_JSON)
                 .content(json(parentFolder))

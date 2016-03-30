@@ -25,6 +25,7 @@ import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.mock.http.MockHttpOutputMessage;
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -90,7 +91,8 @@ import org.junit.Test;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(TestProjectApplication.class)
-@WebIntegrationTest({"server.port=0", "management.port=0"})
+@WebIntegrationTest({"server.port=0"})
+@TestPropertySource(locations="classpath:test.properties")
 public class FolderServicesTest {
 	private HttpMessageConverter mappingJackson2HttpMessageConverter;
 	private List<User> userList = new ArrayList<>();
@@ -122,7 +124,7 @@ public class FolderServicesTest {
 		this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
 	}
 	
-	@Test
+	//@Test
 	public void deleteNotExistingFolder() throws Exception {
 		this.mockMvc.perform(post("/deleteFolderRecursively")
 				.contentType(MediaType.APPLICATION_JSON)
@@ -133,6 +135,7 @@ public class FolderServicesTest {
 	}
 	
 	@Test
+	@Async
 	public void FullTest() throws Exception {
 		List<Folder> subfolders = new LinkedList<Folder>();
 		Folder parentFolder;
@@ -143,6 +146,7 @@ public class FolderServicesTest {
 		userList.add(userDao.save(new User("FolderTest2","Password")));
 		userList.add(userDao.save(new User("FolderTest3","Password")));
 		userList.add(userDao.save(new User("FolderTest4","Password")));
+	
 		
         String userJson = json(userList.get(1));
 		MvcResult result = this.mockMvc.perform(post("/createNewFolder")
@@ -202,8 +206,6 @@ public class FolderServicesTest {
 		
 		Assert.assertTrue(Lists.newArrayList((folderDao.findAll())).size() == 0);
 				
-		return;
-		
 		//--------------------------------------------------------------
 		
 		//Client client = ClientBuilder.newClient();
@@ -250,7 +252,7 @@ public class FolderServicesTest {
 	}
 	
 	public void deleteExistingFolder() throws Exception {
-		//this.FullTest();
+		this.FullTest();
 		
 		this.mockMvc.perform(post("/deleteFolderRecursively")
 				.contentType(MediaType.APPLICATION_JSON)

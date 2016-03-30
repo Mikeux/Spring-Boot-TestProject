@@ -7,6 +7,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,18 +34,13 @@ public class FolderServices {
 	
 	@Autowired
 	private FolderDao folderDao;
-		
+	
 	@Transactional(isolation = Isolation.READ_UNCOMMITTED,propagation = Propagation.SUPPORTS)
     @RequestMapping("/createNewFolder")
     public Folder createNewFolder(@RequestBody User user, @RequestParam(value="name") String name) {
 		
     	Protocol pr = Utils.CreateNewProtocol("FolderServices.createNewFolder", 0);
-    	try {
-    		/*List<Protocol> protList = Utils.protocolDao.findByMethodNameNullErrorMessage("FolderServices.createNewFolder");
-    		if(protList.size() > 0){
-    			throw new Exception("+++++++++");
-    		} */   		
-    		//Thread.sleep(5000);    		
+    	try {   		
         	Folder folder = new Folder(name, userDao.findOne(user.getId()), null);
         	folderDao.save(folder);   
         	Utils.ProtocolClose(pr, true, "", null);        

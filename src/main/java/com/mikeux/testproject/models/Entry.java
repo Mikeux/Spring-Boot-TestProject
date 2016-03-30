@@ -1,6 +1,7 @@
 package com.mikeux.testproject.models;
 
 import java.sql.Timestamp;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,6 +15,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 
@@ -21,12 +24,12 @@ import javax.persistence.Table;
 @Table(name="entry")
 public class Entry {
 	
-	/*
+	
 	@PreUpdate
 	@PrePersist
 	public void updateTimeStamps() {
-	    updateTime = new Date();
-	}*/
+	    updateTime = new Timestamp(new Date().getTime());
+	}
 	
 	public void addLabel(Label label) {
 		if(!this.entyLabels.contains(label)) {
@@ -42,7 +45,7 @@ public class Entry {
 	private String name;
     
 	@Column(name="updateTime", nullable = false,
-    columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP")
+    columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
 	private Timestamp updateTime;
 	
     @ManyToOne(cascade = CascadeType.ALL)
